@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bober.tetris.MainActivity">
+
+    <com.example.bober.tetris.Game
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gameview"/>
+
+    <ImageButton
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:id="@+id/button_down"
+        android:src="@drawable/arrow_down"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_shape"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:dividerPadding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <ImageButton
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/button_left"
+            android:src="@drawable/arrow_left"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"/>
+        <ImageButton
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/button_rotate"
+            android:src="@drawable/arrow_rotate"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"/>
+        <ImageButton
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/button_right"
+            android:src="@drawable/arrow_right"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
